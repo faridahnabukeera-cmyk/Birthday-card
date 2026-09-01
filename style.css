@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #16070d, #2b0d18, #120509);
+    color: #f8e9ed;
+
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* -------------------------
+   OPENING SCREEN
+-------------------------- */
+
+.opening {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #d9a6b5;
+
+    margin-bottom: 15px;
+}
+
+
+.opening h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(70px, 15vw, 130px);
+
+    font-weight: 600;
+
+    color: #fff4f6;
+
+    letter-spacing: 3px;
+
+    animation: glow 3s infinite alternate;
+}
+
+
+.subtitle {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    color: #dba4b4;
+
+    margin-bottom: 45px;
+}
+
+
+.opening button {
+    border: 1px solid #c98296;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: #fff;
+
+    padding: 16px 28px;
+
+    border-radius: 50px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.opening button:hover {
+    background: #c98296;
+
+    color: #16070d;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 30px rgba(201, 130, 150, 0.3);
+}
+
+
+/* -------------------------
+   BIRTHDAY CARD
+-------------------------- */
+
+.card-section {
+
+    min-height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+.card {
+
+    width: min(700px, 100%);
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 25px;
+
+    padding: 55px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.45);
+
+    animation: cardAppear 1.5s ease;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.date {
+
+    text-align: center;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #c98296;
+
+    margin-bottom: 25px;
+}
+
+
+.card h2 {
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(45px, 8vw, 70px);
+
+    line-height: 0.95;
+
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+
+.line {
+
+    width: 70px;
+
+    height: 1px;
+
+    background: #c98296;
+
+    margin: 30px auto;
+}
+
+
+.card p {
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #ead9de;
+
+    margin-bottom: 22px;
+}
+
+
+.card h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #fff4f6;
+
+    margin: 35px 0;
+}
+
+
+/* -------------------------
+   SPECIAL MESSAGE
+-------------------------- */
+
+.special {
+
+    margin: 40px 0;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(201, 130, 150, 0.3);
+
+    border-bottom: 1px solid rgba(201, 130, 150, 0.3);
+}
+
+
+.special-line {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px !important;
+
+    color: #fff !important;
+
+    font-style: italic;
+}
+
+
+.knowing {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px !important;
+
+    color: #e6a6b7 !important;
+
+    margin-top: 25px;
+}
+
+
+.bold-line {
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px !important;
+
+    color: #fff !important;
+}
+
+
+/* -------------------------
+   SIGNATURE
+-------------------------- */
+
+.signature {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    color: #cfa8b3 !important;
+}
+
+
+.signature span {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    color: #fff;
+
+}
+
+
+/* -------------------------
+   MUSIC BUTTON
+-------------------------- */
+
+.music-button {
+    min-width: 220px !important;
+
+    min-height: 60px !important;
+
+    padding: 18px 35px !important;
+
+    position: fixed;
+
+    bottom: 25px !important;
+
+    right: 25px !important;
+
+    width: 65px !important;
+
+
+    height: 65px !important;
+
+    border-radius: 50%;
+
+    border: 1px solid #c98296;
+
+    background: rgba(20, 5, 10, 0.8);
+
+    color: white !important;
+
+    font-size: 30px !important;
+
+    cursor: pointer! important;
+    
+    font-weight: bold !important;
+
+    z-index: 10 !important;
+
+    transition: 0.3s ease;
+}
+
+
+.music-button:hover {
+
+    transform: scale(1.1);
+
+    background: #c98296;
+}
+
+
+/* -------------------------
+   FLOATING HEARTS
+-------------------------- */
+
+.hearts span {
+
+    position: float;
+
+    bottom: -50px;
+
+    font-size: 25px;
+
+    color: rgba(220, 140, 160, 0.35);
+
+    animation: float 12s linear infinite;
+
+    z-index: 1;
+}
+
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(3) {
+    left: 40%;
+    animation-delay: 6s;
+}
+
+.hearts span:nth-child(4) {
+    left: 55%;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(5) {
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(6) {
+    left: 85%;
+    animation-delay: 7s;
+}
+
+.hearts span:nth-child(7) {
+    left: 95%;
+    animation-delay: 2s;
+}
+
+
+/* -------------------------
+   ANIMATIONS
+-------------------------- */
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 10px rgba(220, 140, 160, 0.2);
+    }
+
+    to {
+        text-shadow:
+            0 0 30px rgba(220, 140, 160, 0.5),
+            0 0 60px rgba(220, 140, 160, 0.2);
+    }
+
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+
+/* -------------------------
+   PHONE SCREEN
+-------------------------- */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 35px 25px;
+        border-radius: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .special {
+        padding: 25px 15px;
+    }
+
+}

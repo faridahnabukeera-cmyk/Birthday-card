@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HAPPY BIRTHDAY LOVE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Floatinh hearts-->
+        <div class=""hearts">
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+        <span>🤍</span>
+    </div>
+    <!--Opning screen -->
+    <section id=""opening" class="opening">
+        <p class=""samll-text"> HAPPY BIRTHDAY BEBE</p>
+        <h1>FASWIHA</h1>
+        <p class="subtitle">MY BEBE</p>
+        
+
+    
+    </section>
+    <!--Birthday card-->
+    <selection id="card" class="card-selection"> </selection>
+        <div class="card">
+            <h2>HAPPY BIRTHDAY MY LOVE</h2>
+            <div class="line"></div>
+            <p>
+                HAPPY BIRTHDAY BUKENYA FASWIHA
+            </p>
+            <p>
+                WE HAVE BASICALLY JUST STARTED TALKING, BUT SOMEHOW
+                YOUR PRESENCE HES BECOME KIND OF ADDICTIVE. 
+                I LOOK FORWARD TO OUR LATE-NIGHT CALLS, EVEN WHEN THEY
+                SOMEHOW STRETCH ALL THE WAY TO 3AM AND I HAVE A LECTURE
+                THE NEXT MORNING.
+            </P>
+            <p>
+                I REALLY LOVE YOUR EYES. AND NO I'M GENUINELY
+                NOT EXAGGERATING WHEN I SAY THAT.
+            </p>
+            <p>
+                YOU ARE THE ONLY PERSON AT THIS MOMENT THAT I CAN ENTRUST
+                MY LIFE TO. AND MAYBE THATS A CRAZY THING TO SAY THIS EARLY 
+                BUT ITS THE TRUTH
+            </p>
+            <div class="special">
+                <p class="special-line">
+                    YOU HAVE ALWAYS BEEN A BACKGROUND CHARACTER IN MY STORY.
+                </p>
+                <p>
+                    I ALWAYS NOTICED YOU.
+                    I JUST DIDNT WANT TO MAKE IT OBVIOUS
+                </p>
+                <p>
+                    BUT I ALWAYS KNEW
+                </p>
+            </div>
+        <p>
+            I'M GLAD YOU FINALLY FOUND THE COURAGE TO MAKE IT KNOWN.
+        </p>
+        <p>
+            AND SOMEHOW, YOU BECAME MY FAVOURITE ACHIVEMNT OF 2026
+        </p>
+        <p>
+            2026 WILL FOREVER BE A MEMORABLE YEAR FOR ME AND THAT IS ENTIRELY 
+            BECAUSE OF YOU.
+        </p>
+        <p>
+            I LOVE SO MUCH, AND I HAVE NO INTENTION OF LETTING THE FEELINGS I HAVE FOR YOU DETERIOTE
+        </p>
+        <p class="bold-line">
+            TO YOUR BIRTHDAY, TO THIS LITTLE THING WE STARTED, TO THE LATE-NIGHT CALLS, THE LAUGHS, THE MOMENTS
+            WE HAVENT EVEN HAD YET AND HOPEFULLY, TO MANY MORE MEMORIES TOGETHER.
+        </p>
+        <h3> Happy birthday bebe</h3>
+        <p class="signature">
+            with love,<br>
+            <span>FARIDAH</span>
+        </p>
+        </div>
+    <!--music button-->
+    <button class="music-botton"
+onclick="toggleMusic()">
+🎵 play music
+</button>
+<audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+<script>
+    function opencard() {
+        docement.getElemntById("opening").style.display ="none";
+        docement.getElemntById("card").style.display ="flex";
+        docement.getElemntById("music").play().catch(() =>{
+            console.log("Music needs user interraction.");
+        });
+        }
+</script>
+<script>
+        function toggleMusic() {
+            const music= document.getElementById("music");
+            if (music.paused) {
+                music.play();
+                button.innerHTML="⏸️ Pause Music"
+            } else {
+                music.pause();
+                button.innerHTML= "🎵 play music"
+            }
+        
+        }
+
+</script>
+    </body>
+</html>
